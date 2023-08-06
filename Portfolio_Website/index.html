@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prajeet's</title>
-    <link rel="stylesheet" href="/Portfolio_Website/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
-
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Unbounded:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class = "left">Prajeet's Portfolio</div>
-            <div class = "right">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
-                </ul>
-            </div>
-        </nav>
+      <nav>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
     </header>
-     
+
     <main>
-        <section class = "firstSection">
-            <div class = "leftSection"></div>
-            <div class = "secondSection"></div>
-        </section>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi 👋, I'm <span class="gry">Prajeet</span>.
+          <div>I'm A Aspiring</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="Memoji.png" alt="" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="secondSection">
+        <h1>About</h1>
+      </section>
     </main>
-</body>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Student", "Graphic Designer", "Web Developer."],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
 </html>
