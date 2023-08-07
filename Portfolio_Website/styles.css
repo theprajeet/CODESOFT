@@ -11,13 +11,13 @@ body {
 nav {
   display: flex;
   justify-content: space-around;
-  position: fixed;
+  font-size: 1rem;
   font-family: Montserrat;
   align-items: center;
   height: 60px;
   margin-left: 25rem;
   margin-right: 25rem;
-  margin-top: 15px;
+  margin-top: 20px;
   border-radius: 50px;
   background-color: rgb(60, 60, 76);
 }
@@ -40,8 +40,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: rgb(140, 140, 232);
+  color: white;
   font-size: 1.01rem;
+  border-radius: 50px;
+  background-color: rgb(202, 189, 243);
+  padding: 14px 17px 14px 17px;
 }
 
 /* FIRST SECTION */
@@ -59,14 +62,14 @@ nav ul li a:hover {
   font-family: "Unbounded", cursive;
   font-size: 4rem;
   font: #d8d9da;
-  margin-top: 15rem;
+  margin-top: 10rem;
   margin-bottom: 15%;
   margin-left: 100px;
   flex-grow: 0.7;
 }
 
 .rightSection img {
-  margin-top: 10rem;
+  margin-top: 6rem;
   width: 90%;
 }
 
@@ -89,6 +92,7 @@ nav ul li a:hover {
   font-family: "Unbounded", cursive;
   font-size: 4rem;
   margin-left: 25rem;
+  margin-top: 4rem;
 }
 
 .About {
@@ -105,9 +109,9 @@ main hr {
 }
 
 .Myimg {
-  width: 25%;
-  margin-left: 5rem;
-  margin-top: 7rem;
+  width: 26%;
+  margin-left: 7rem;
+  margin-top: 6rem;
   border: 0px solid rgb(155, 155, 233);
   border-radius: 50%;
   background-color: rgb(155, 155, 233);
@@ -116,16 +120,125 @@ main hr {
 p {
   font-family: Montserrat;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   width: 42%;
-  height: 20%;
+  height: 10%;
   margin-top: 7rem;
-  margin-right: 5rem;
+  margin-right: 11rem;
   text-align: left;
   line-height: 2rem;
 }
 
-.button {
+.secondSection a {
+  text-decoration: none;
+  font-family: Montserrat;
+  background: rgb(155, 155, 233);
+  padding: 10px 18px 10px 18px;
+  border-radius: 10px;
+  font-style: none;
+  position: absolute;
+  margin-right: 6rem;
+  margin-top: 24rem;
+  color: black;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  margin-bottom: 30rem;
+  font-weight: 600;
+}
+
+.secondSection a:hover {
+  background: rgb(113, 113, 175);
+}
+
+main hr {
+  border: 0;
+  background: rgb(155, 155, 233);
+  border-radius: 50px;
+  height: 2px;
+
+  margin: 40px 84px;
+}
+
+/*THIRD SECTION*/
+
+.thirdSection {
+  margin-left: 100px;
+  height: 100vh;
+}
+
+.thirdSection h1 {
+  font-family: "Unbounded", cursive;
+  font-size: 4rem;
+  margin-left: 25rem;
+  margin-top: 4rem;
+}
+
+.projects {
+  margin-top: 7rem;
   display: flex;
-  justify-content: space-around;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project1 {
+  width: 17rem;
+  height: 20rem;
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid lightgray;
+  font-family: "Montserrat", sans-serif;
+  background: rgb(155, 155, 233);
+  margin-right: 5rem;
+}
+
+.img1 {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.thirdSection h2 {
+  margin-top: 2px;
+  color: black;
+}
+
+.thirdSection h4 {
+  width: 100%;
+  height: 10%;
+  font-weight: light;
+  margin-top: 1rem;
+  color: black;
+  border-radius: 12px;
+}
+
+.project2 {
+  width: 17rem;
+  height: 20rem;
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid lightgray;
+  font-family: "Montserrat", sans-serif;
+  background: rgb(155, 155, 233);
+  margin-right: 5rem;
+}
+
+.img2 {
+  width: 100%;
+  border-radius: 14px;
+}
+
+.project3 {
+  width: 17rem;
+  height: 20rem;
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid lightgray;
+  font-family: "Montserrat", sans-serif;
+  background: rgb(155, 155, 233);
+  margin-right: 5rem;
+}
+
+.img3 {
+  width: 100%;
+  border-radius: 14px;
 }
