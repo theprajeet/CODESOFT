@@ -40,8 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: white;
-  font-size: 1.01rem;
+  color: black;
   border-radius: 50px;
   background-color: rgb(202, 189, 243);
   padding: 14px 17px 14px 17px;
@@ -123,30 +122,74 @@ p {
   font-size: 1.2rem;
   width: 42%;
   height: 10%;
-  margin-top: 7rem;
+  margin-top: 9rem;
   margin-right: 11rem;
   text-align: left;
   line-height: 2rem;
 }
 
-.About a {
+.Resume {
   text-decoration: none;
   font-family: Montserrat;
   background: rgb(155, 155, 233);
   padding: 10px 18px 10px 18px;
   border-radius: 10px;
+  border: 0px solid;
   font-style: none;
   color: black;
   letter-spacing: 1px;
   position: absolute;
   font-size: 1rem;
   font-weight: 600;
-  margin-right: 6rem;
-  margin-top: 24rem;
+  margin-right: 5rem;
+  margin-top: 22rem;
+}
+
+.GitHub {
+  text-decoration: none;
+  font-family: Montserrat;
+  background: rgb(155, 155, 233);
+  padding: 4px 5px 4px 6px;
+  border-radius: 10px;
+  border: 0px solid;
+  font-style: none;
+  letter-spacing: 1px;
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 9rem;
+  margin-top: 22rem;
+}
+
+.LinkedIn {
+  text-decoration: none;
+  font-family: Montserrat;
+  background: rgb(155, 155, 233);
+  padding: 4px 5px 4px 6px;
+  border-radius: 10px;
+  border: 0px solid;
+  font-style: none;
+  letter-spacing: 1px;
+  position: absolute;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-left: 17rem;
+  margin-top: 22rem;
+}
+
+.fa-github {
+  color: black;
+}
+.fa-linkedin {
+  color: black;
+}
+a:hover i {
+  transform: scale(1.1);
 }
 
 .secondSection a:hover {
   background: rgb(113, 113, 175);
+  transition: all;
 }
 
 main hr {
@@ -331,6 +374,7 @@ textarea:focus-within {
   color: white;
   border: 0px solid;
   font-size: 22px;
+  font-weight: 500;
   padding: 7px 25px;
   text-align: center;
   display: flex;
@@ -342,4 +386,125 @@ textarea:focus-within {
 .fourthSection button:hover {
   background-color: rgb(45, 45, 52);
   cursor: pointer;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(113, 113, 175);
+}
+
+.footerContainer {
+  width: 95%;
+  padding: 70px 30px 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  text-decoration: none;
+  background-color: black;
+  margin: 13px;
+}
+
+.f-Resume {
+  text-align: center;
+  border-radius: 12px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  padding: 13px 12px 0px 12px;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.f-GitHub {
+  border-radius: 50%;
+  color: white;
+  padding: 4px;
+  font-size: large;
+  padding-left: 7px;
+  padding-top: 6px;
+  width: 3%;
+}
+
+.f-LinkedIn {
+  border-radius: 50%;
+  color: white;
+  padding: 5px;
+  padding-top: 6px;
+  justify-content: center;
+  width: 3%;
+  font-size: 31px;
+  text-align: center;
+}
+
+.social-icons a:hover {
+  background-color: rgb(35, 33, 33);
+  transition: 0.4s;
+}
+
+.social-icons a i {
+  color: white;
+}
+
+.footer-nav {
+  margin: 30px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav ul li {
+  list-style: none;
+}
+
+.footer-nav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 1.3em;
+  font-weight: 500;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.footer-nav ul li a:hover {
+  color: rgb(18, 17, 17);
+}
+
+.footer-bottom {
+  display: flex;
+}
+
+.footer-bottom p {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 33%;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.Designer {
+  text-transform: uppercase;
+  font-family: "Unbounded", cursive;
+  margin: 0px 5px;
+  font-weight: lighter;
+}
+
+@media (max-wdth: 700px) {
+  .footer-nav ul {
+    flex-direction: column;
+  }
+  .footer-nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
 }

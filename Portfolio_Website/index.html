@@ -11,23 +11,27 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Unbounded:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <nav>
         <div class="right">
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">About</a></li>
-            <li><a href="/">Projects</a></li>
-            <li><a href="/">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projectss">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="firstSection">
+      <section class="firstSection" id="home">
         <div class="leftSection">
           Hi 👋, I'm <span class="gry">Prajeet</span>.
           <div>I'm A Aspiring</div>
@@ -40,7 +44,7 @@
 
       <hr />
 
-      <section class="secondSection">
+      <section class="secondSection" id="about">
         <h1>About</h1>
         <div class="About">
           <img class="Myimg" src="Myimg.png" />
@@ -48,16 +52,27 @@
             Hello there, I'm Prajeet, an aspiring undergrad student at Bapuji
             Institute Of Technology. My Passion lies in the realm of Graphic
             Design, Web Design, Web Development, AI. I have honed my skills in
-            HTML, CSS, Javascrit, C, Python and Figma. I cordially invite you to
-            peruse my attached resume for further insights into my capabilities
-            and accomplishments. Thank you for your consideration.
+            HTML, CSS, Javascrit, C, Python and Figma. Do consider connecting
+            with me on LinkedIn and GitHub 😊.
           </p>
-          <a href="" download>Resume</a>
+          <a class="Resume" href="" download
+            >Resume
+            <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <a class="GitHub" href="https://github.com/theprajeet">
+            <i class="fa-brands fa-2x fa-github"></i>
+          </a>
+          <a
+            class="LinkedIn"
+            href="https://www.linkedin.com/in/prajeet-hiremath/"
+          >
+            <i class="fa-brands fa-2x fa-linkedin"></i>
+          </a>
         </div>
       </section>
       <hr />
 
-      <section class="thirdSection">
+      <section class="thirdSection" id="projectss">
         <h1>Projects</h1>
 
         <div class="projects">
@@ -94,7 +109,8 @@
         </div>
       </section>
       <hr />
-      <section class="fourthSection">
+
+      <section class="fourthSection" id="contact">
         <h1>Contact</h1>
         <div class="Contact">
           <img class="memimg" src="Memoji2.png" />
@@ -119,7 +135,7 @@
                 rows="5"
                 cols="60"
                 name="message"
-                placeholder="Enter Text"
+                placeholder="Enter Here"
                 autocomplete="off"
                 required
               >
@@ -130,6 +146,41 @@
         </div>
       </section>
       <hr />
+
+      <section class="fifthSection"></section>
+      <footer>
+        <div class="footerContainer">
+          <div class="social-icons">
+            <a class="f-Resume" href="" download
+              >Resume
+              <i class="fa-solid fa-arrow-down"></i>
+            </a>
+            <a class="f-GitHub" href="https://github.com/theprajeet">
+              <i class="fa-brands fa-2x fa-github"></i>
+            </a>
+            <a
+              class="f-LinkedIn"
+              href="https://www.linkedin.com/in/prajeet-hiremath/"
+            >
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projectss">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-bottom">
+            <p>
+              Copyright &copy;2023; Designed By
+              <span class="Designer">Prajeet</span>
+            </p>
+          </div>
+        </div>
+      </footer>
     </main>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
